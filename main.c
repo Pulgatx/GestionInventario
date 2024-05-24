@@ -14,8 +14,8 @@ typedef struct
 {
     SDL_Rect rect; //Rectangulo en SDL
     char text[50]; //Variable para guardar el texto del boton
-    bool clicked; //Variable de estado para el boton
-} Button;
+        bool clicked; //Variable de estado para el boton
+    } Button;
 
 // Estructura para un producto
 typedef struct
@@ -174,9 +174,9 @@ void getTextInput(SDL_Renderer *renderer, TTF_Font *font, char *inputText, int m
     if (opc == 0)
         prompt = "Ingrese la cantidad del producto:";
     else if (opc == 1)
-        prompt = "Ingrese el índice del producto a eliminar:";
+        prompt = "Ingrese el indice del producto a eliminar:";
     else
-        prompt = "Ingrese el índice del producto a modificar:";
+        prompt = "Ingrese el indice del producto a modificar:";
 
     while (!done) // Bucle principal de entrada de texto
     {
